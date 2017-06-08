@@ -40,14 +40,33 @@ namespace Chapter1App
 	      Console.WriteLine(str4);
 
 	      char [] destarr = {'a', 'b', 'c', 'd', 'e'};
-	      string str5 = "fgh";
-	      str5.CopyTo(0, destarr, 0, str5.Length );
+	      string str5 = "fg";
+	      str5.CopyTo(0, destarr, 2, str5.Length );
 	      Console.WriteLine(destarr);
 
 	      string findIndex = "test me!";
 	      int res =  findIndex.IndexOf('s');
 	      Console.WriteLine(res);
 
+	      string replchar = "replace me!";
+	      string newstr = replchar.Replace('e', ' ');
+	      Console.WriteLine(newstr.ToUpper());
+
+	      string replchar2 = "replace string value test!";
+
+	      string newstr2 = replchar2.Replace(replchar2, "This is a new string");
+
+	      string newstr3 = newstr2.Remove(3,5);
+
+	      Console.WriteLine(newstr2);
+	      Console.WriteLine(newstr3);
+ 
+ 				string str11 = "           too many spaces       ";
+
+ 				Console.WriteLine( str11.Trim());
+ 				string sen = "hello!";
+ 				int num = 11;
+ 				Console.WriteLine("Here is out result string: {0}, {1}", sen, num);
 
 	  }
 	}
