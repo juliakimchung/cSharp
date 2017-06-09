@@ -2,6 +2,8 @@ using System;
 
 namespace Chap2App
 {
+
+	
 	class Chap2
 	{
 		static void Main(string[] args)
@@ -74,6 +76,26 @@ namespace Chap2App
 		  {
 		  	Console.WriteLine("odd");
 		  }
+
+		  string greeting = "Annyung!";
+
+		  switch(greeting)
+		  {
+		  	case "Hola!":
+		  		Console.WriteLine("Spanish");
+		  		break;
+		  	case "Hello!":
+		  	 	Console.WriteLine("English");
+		  	 	break;
+		  	case "Bonjour!":
+		  		Console.WriteLine("French");
+		  		break;
+		  	default:
+		  		Console.WriteLine("Language not recognized");
+		 			break;
+			} 
+
+
 		}
 
 	}
