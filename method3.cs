@@ -21,6 +21,11 @@ namespace Chapter4App
 			c = "Thirty-six";
 		}
 
+		public void ReturnString(out string sentence)
+		{
+			sentence =  "This is some sentence!";
+		}
+
 		static void Main(string[] args)
 		{
 			int a = 255;
@@ -39,6 +44,11 @@ namespace Chapter4App
 			var ccc = new Chapter4();
 			ccc.ReturnMultiple(out i, out d, out s);
 			Console.WriteLine("Here are your results: {0},{1},{2}", i, d, s);
+
+			string start = "Hello ";
+			var ss = new Chapter4();
+			ss.ReturnString(out start);
+			Console.WriteLine(start);
 		}
 	}
 }
