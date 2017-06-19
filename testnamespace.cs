@@ -1,4 +1,5 @@
 using System;
+
 namespace testnamespace
 {
 	public class testnamespaceclass
