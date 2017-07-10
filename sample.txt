@@ -1,1 +1,1 @@
-hello! you opened my file!
+Hello You just wrote to this file!
